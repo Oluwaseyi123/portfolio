@@ -61,6 +61,7 @@ header{
 nav{
     ul{
         display: none;
+        width: 30rem;
         li{
             display: block;
             margin: 3px auto;
@@ -73,7 +74,7 @@ nav{
                 font-size: 18px;
                 text-align: center;
                 font-family: 'GTWalsheimPro-medium';
-                transition: all .2s ease;
+                transition: all .5s ease;
             }
         }
     }
@@ -85,7 +86,7 @@ nav{
 }
 nav{
     ul li a:hover{
-        font-size: 20px;
+        color: #FA3B5A;
     }
 }
 .show-nav{
@@ -254,7 +255,7 @@ nav{
         color: #555555;
         line-height: 20px;
         padding-bottom: 20px;
-        width: 320px;
+        
         margin: 0 auto;
         text-align: center;
     }
@@ -333,7 +334,7 @@ nav{
     }
 }
 .contact-div{
-    width: 325px;
+    width: 280px;
     height: 300px;
     background: #BBF1E4;
     margin: 15px auto;
@@ -347,7 +348,7 @@ form{
     padding-left: 20px;
     input{
         padding-left: 8px;
-        width: 250px;
+        width: 200px;
         outline: none;
         background: #BBF1E4;
         border: none;
@@ -413,7 +414,7 @@ footer{
     nav{
         ul{
             display: flex;
-            width: 250px;
+            width: 20rem;
             justify-content: space-between;
             li{
                 list-style: none;
@@ -490,6 +491,9 @@ footer{
     .landing{
         padding: 30px 70px;
     }
+    .toggle{     
+        margin-left: 96%;
+    }
     .hero-img{
         margin-left: 30px;
         svg{
@@ -524,5 +528,100 @@ footer{
     .container{
         background: #BBF1E4;
         height: 800px;
+    }
+}
+
+@media screen and (min-width: 1706px){
+    .landing{
+        padding: 30px 150px;
+    }
+    .tech-wrapper, .projects{
+        max-width: 50%;
+    }
+    nav{
+        ul{
+            width: 30rem;
+            li a{
+                font-size: 23px;
+            }
+        }
+    }
+    .hero-text{
+        p{
+            line-height: 88px;
+        }
+        p:nth-of-type(1){
+            font-size: 73px;
+        }
+        p:nth-of-type(2){
+            font-size: 50px;
+        }
+        button{
+            width: 18rem;
+            height: 4rem;
+            a{
+                font-size: 26px;
+            }
+        }
+    }
+    .container{
+        height: 1000px;
+    }
+    .hero-img{
+        svg{
+            margin-left: 7rem;
+        }
+    }
+    .featured-projects, .technologies, .contact{
+        > p:nth-of-type(1){
+            font-size: 45px;
+        }
+    }
+    .project, .tech{
+        p:nth-of-type(1){
+            font-size: 30px;
+            padding-top: 25px;
+        }
+        p:nth-of-type(2){
+            font-size: 18px
+        }
+    }
+    .tech{
+        width: 300px;
+        height: 260px;
+        ul li{
+            font-size: 18px;
+        }
+    }
+    .contact p:nth-of-type(2){
+        font-size: 18px;
+    }
+    .contact-div{
+        width: 465px;
+        height: 400px;
+    }
+    .group{
+        margin-top: 10px;
+        input{
+            font-size: 20px;
+        }
+
+        i{
+            font-size: 20px;
+        }
+    }
+    .group.one{
+        margin-top: 20px;
+    }
+    textarea{
+        font-size: 20px;
+    }
+    input[type=submit]{
+        width: 9.5em;
+        height: 2.5em;
+        font-size: 25px;
+    }
+    .technologies{
+        height: 250px;
     }
 }
