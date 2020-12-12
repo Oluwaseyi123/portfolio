@@ -86,8 +86,6 @@ nav ul li a {
 
 nav img {
   cursor: pointer;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
   float: right;
 }
 
@@ -109,7 +107,7 @@ nav ul li a:hover {
   margin-top: 7vh;
   z-index: -1;
   background: #F3908A;
-  height: 20vh;
+  height: 100px;
   width: 80vw;
 }
 
