@@ -66,7 +66,7 @@ nav ul {
 
 nav ul li {
   display: block;
-  margin: 1px auto;
+  margin: 3px auto;
   list-style: none;
   padding-bottom: 15px;
   -webkit-box-pack: end;
@@ -90,7 +90,7 @@ nav img {
 }
 
 nav ul li a:hover {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .show-nav {
@@ -107,8 +107,8 @@ nav ul li a:hover {
   margin-top: 7vh;
   z-index: -1;
   background: #F3908A;
-  height: 100px;
-  width: 80vw;
+  height: 120px;
+  width: 380px;
 }
 
 .toggle {
