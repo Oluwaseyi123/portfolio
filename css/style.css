@@ -64,8 +64,53 @@ nav ul {
   display: none;
 }
 
+nav ul li {
+  display: block;
+  margin: 1px auto;
+  list-style: none;
+  padding-bottom: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'GTWalsheimPro-medium';
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 nav img {
   cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  float: right;
+}
+
+nav ul li a:hover {
+  font-size: 23px;
+}
+
+.show-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 7vh;
+  z-index: -1;
+  background: #F3908A;
+  height: 20vh;
+  width: 80vw;
 }
 
 .toggle {
@@ -224,7 +269,7 @@ nav img {
 
 .technologies {
   background: #F3908A;
-  height: auto;
+  height: 900px;
 }
 
 .tech-wrapper {

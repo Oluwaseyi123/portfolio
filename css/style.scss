@@ -61,10 +61,43 @@ header{
 nav{
     ul{
         display: none;
+        li{
+            display: block;
+            margin: 1px auto;
+            list-style: none;
+            padding-bottom: 15px;
+            justify-content: flex-end;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 18px;
+                text-align: center;
+                font-family: 'GTWalsheimPro-medium';
+                transition: all .2s ease;
+            }
+        }
     }
     img{
         cursor: pointer;
+        transition: all .5s ease;
+        float: right;
     }
+}
+nav{
+    ul li a:hover{
+        font-size: 23px;
+    }
+}
+.show-nav{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 7vh;
+    z-index: -1;
+    background: #F3908A;
+    height: 20vh;
+    width: 80vw;
+
 }
 
 .toggle{
@@ -190,7 +223,7 @@ nav{
 }
 .technologies{
     background: #F3908A;
-    height: auto;
+    height: 900px;
    
 }
 

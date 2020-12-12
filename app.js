@@ -10,14 +10,11 @@ function nightMode(){
     const textarea = document.querySelector('textarea')
     toggle.classList.toggle('mode')
     images.forEach((image) => {
-        console.log(image)
         image.classList.toggle('body-night')
     })
     document.documentElement.classList.toggle('body-night')
     toggleIcon.classList.toggle('night')
     svg.classList.toggle('body-night')
-
-    console.log('night mode')
 }
  
 const fadeIn = document.querySelectorAll('.fade-in')
@@ -42,9 +39,21 @@ appearOnScroll.observe(fade)
 
 const navIcon = document.querySelector('.nav-icon')
 navIcon.addEventListener('click', showNav)
+let image_tracker = 'orange';
+
 
 function showNav(e) {
-  
-  console.log(navIcon.childNodes)
+ // navIcon.src = 'images/close.svg'
+  const navUL = document.querySelector('.nav-ul')
+  if(image_tracker == 'orange'){
+     navIcon.src = 'images/close.svg'
+     navUL.classList.add('show-nav')
+     image_tracker = 'blue'
+
+  }else{
+    navIcon.src = 'images/nav-icon.svg'
+    navUL.classList.remove('show-nav')
+    image_tracker = 'orange';
+  }
  
 }
