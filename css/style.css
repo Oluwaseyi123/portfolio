@@ -505,6 +505,26 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  @-webkit-keyframes move {
+    from {
+      -webkit-transform: rotatez(0deg);
+              transform: rotatez(0deg);
+    }
+    to {
+      -webkit-transform: rotatez(-40deg);
+              transform: rotatez(-40deg);
+    }
+  }
+  @keyframes move {
+    from {
+      -webkit-transform: rotatez(0deg);
+              transform: rotatez(0deg);
+    }
+    to {
+      -webkit-transform: rotatez(-40deg);
+              transform: rotatez(-40deg);
+    }
+  }
   .hero-img svg {
     display: block;
     height: 450px;

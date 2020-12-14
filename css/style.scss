@@ -438,6 +438,15 @@ footer{
         display: flex;
         justify-content: space-between;
     }
+
+    @keyframes move {
+        from{
+            transform: rotatez(0deg);
+        }
+        to{
+            transform: rotatez(-40deg);
+        }
+    }
     .hero-img{
         svg{
            display: block;
