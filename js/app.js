@@ -2,7 +2,6 @@ const toggleIcon = document.querySelector('.toggle-icon')
 const toggle = document.querySelector('.toggle')
 toggleIcon.addEventListener('click', nightMode)
 let images = document.querySelectorAll('img')
-const svg = document.querySelector('svg')
 let icons = document.querySelectorAll('i')
 
 console.log(innerWidth)
@@ -22,6 +21,7 @@ const appearOptions = {
   threshold: 0.2,
   rootMargin: "0px 0px -5px 0px"
 }
+
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
   entries.forEach(entry => {
     if(!entry.isIntersecting){
@@ -56,4 +56,50 @@ function showNav(e) {
     image_tracker = 'orange';
   }
  
+}
+
+const submitBtn = document.querySelector('.submit-btn')
+submitBtn.addEventListener('click', submitForm)
+
+function submitForm(e){
+  const textArea = document.querySelector('textarea')
+  const inputs = document.querySelectorAll('input')
+  
+  if(inputs[1].value== '' || inputs[0].value== '' || textArea.value== ''){
+    showMessage('Please fill the form', 'error') 
+  }else{
+    const form = document.querySelector('form')
+        const formAttribute = form.setAttribute('data-netlify', true)
+        form.method = 'post'
+       
+       showMessage('Thanks for reaching out. I will be in touch shortly', 'success')
+       clearInputFields(inputs[0])
+       clearInputFields(inputs[1])
+       clearInputFields(textArea)
+  }
+  
+  e.preventDefault()
+}
+
+function showMessage(message, className){
+  const messageDiv = document.createElement('div')
+  const form = document.querySelector('form')
+
+  const messageParagraph = document.createElement('span')
+  messageDiv.appendChild(messageParagraph)
+
+  const groupOne = document.querySelector('.group-one')
+  form.insertBefore(messageDiv, groupOne)
+
+  messageParagraph.innerText = message
+  messageParagraph.classList.add(className)
+
+  setTimeout(() => {
+    messageParagraph.innerText = ''
+  }, 2000)
+  
+}
+
+function clearInputFields(input){
+  input.value = ''
 }
