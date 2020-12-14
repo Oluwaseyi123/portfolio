@@ -182,13 +182,11 @@ nav{
        line-height: 40px;
    }
    p:nth-of-type(1){
-    font-size: 30px;
-    font-family: 'GTWalsheimPro-medium';
+    font: 30px 'GTWalsheimPro-medium';
    }
    p:nth-of-type(2){
-       font-size: 20px;
+       font: 20px 'GTWalsheimPro-regular';
        color: #555555;
-       font-family: 'GTWalsheimPro-regular';
        margin-bottom: 10px;
    }
    button{
@@ -203,8 +201,7 @@ nav{
        a{
            color: #BBF1E4;
            text-decoration: none;
-           font-family: 'GTWalsheimPro-medium';
-           font-size: 16px;
+           font: 16px 'GTWalsheimPro-medium';
        }
    }
 }
@@ -214,8 +211,7 @@ nav{
     margin-top: 50px;
     > p{
         padding-top: 30px;
-        font-size: 25px;
-        font-family: 'GTWalsheimPro-medium';
+        font: 25px 'GTWalsheimPro-medium';
         text-align: center;
     }
 }
@@ -246,12 +242,10 @@ nav{
         text-align: center;
     }
     p:nth-of-type(1){
-        font-size: 28px;
-        font-family: 'GTWalsheimPro-medium';
+        font: 28px 'GTWalsheimPro-medium';
     }
     p:nth-of-type(2){
-        font-size: 14px;
-        font-family: 'GTWalsheimPro-regular';
+        font: 14px 'GTWalsheimPro-regular';
         color: #555555;
         line-height: 20px;
         padding-bottom: 20px;
@@ -294,8 +288,7 @@ nav{
 
     p{
         text-align: center;
-        font-size: 20px;
-        font-family: 'GTWalsheimPro-medium';
+        font: 20px 'GTWalsheimPro-medium';
         padding-top: 10px;
         padding-bottom: 10px;
 
@@ -303,9 +296,7 @@ nav{
     ul li{
         list-style: none;
         font-family: 'GTWalsheimPro-regular';
-        padding-bottom: 10px;
-        padding-left: 15px;
-        padding-top: 10px;
+        padding: 10px 0px 10px 15px;
         color: #555555;
 
     }
@@ -315,22 +306,19 @@ nav{
 }
 .contact{
     transition: all .5s ease-in-out; 
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 20px 0px 50px 0px;
+   
     text-align: center;
     p:nth-of-type(1){
-        font-size: 22px;
-        font-family: 'GTWalsheimPro-medium';
+        font: 22px  'GTWalsheimPro-medium';
         
     }
     p:nth-of-type(2){
         width: 250px;
         padding-top: 5px;
         margin: 0 auto;
-        font-size: 16px;
+        font: 16px 'GTWalsheimPro-regular';
         color: #555555;
-        font-family: 'GTWalsheimPro-regular';
-
     }
 }
 .contact-div{
@@ -343,9 +331,8 @@ nav{
 form{
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 30px 20px 0px 20px;
+    
     input{
         padding-left: 8px;
         width: 200px;
@@ -380,9 +367,8 @@ textarea{
     height: 30px;
     background: #F3908A;
     cursor: pointer;
-    font-family: 'GTWalsheimPro-medium';
     color: #263238;
-    font-size: 15px;
+    font: 15px 'GTWalsheimPro-medium';
 }
 footer{
     background: #A6A6B7;
