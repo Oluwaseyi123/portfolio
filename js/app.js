@@ -4,7 +4,6 @@ toggleIcon.addEventListener('click', nightMode)
 let images = document.querySelectorAll('img')
 let icons = document.querySelectorAll('i')
 
-console.log(innerWidth)
 function nightMode(){
     const textarea = document.querySelector('textarea')
     toggle.classList.toggle('mode')
