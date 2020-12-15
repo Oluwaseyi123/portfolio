@@ -68,8 +68,8 @@ function submitForm(e){
     showMessage('Please fill the form', 'error') 
   }else{
     const form = document.querySelector('form')
-    form.method = 'post'
-    form.setAttribute('data-netlify', true)
+    // form.method = 'post'
+    // form.setAttribute('data-netlify', true)
         
        console.log(form)
        showMessage('Thanks for reaching out. I will be in touch shortly', 'success')
