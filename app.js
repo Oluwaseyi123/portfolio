@@ -57,12 +57,9 @@ function showNav(e) {
  
 }
 
-const form = document.querySelector('form')
-form.addEventListener('submit', submitForm)
+const form = document.querySelector('form').addEventListener('submit', submitForm)
 
 function submitForm(e){
-  
-
   const textArea = document.querySelector('textarea')
   const inputs = document.querySelectorAll('input')
   
@@ -82,6 +79,9 @@ function submitForm(e){
        clearInputFields(inputs[0])
        clearInputFields(inputs[1])
        clearInputFields(textArea)
+
+       console.log(inputs[1].value)
+       console.log(inputs[0].value)
   }
   
   e.preventDefault()
