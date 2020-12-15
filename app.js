@@ -60,6 +60,8 @@ function showNav(e) {
 const form = document.querySelector('form').addEventListener('submit', submitForm)
 
 function submitForm(e){
+  e.preventDefault()
+  
   const textArea = document.querySelector('textarea')
   const inputs = document.querySelectorAll('input')
   
@@ -84,7 +86,7 @@ function submitForm(e){
        console.log(inputs[0].value)
   }
   
-  e.preventDefault()
+ 
 }
 
 function showMessage(message, className){
