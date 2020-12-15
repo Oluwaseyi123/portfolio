@@ -57,28 +57,36 @@ function showNav(e) {
  
 }
 
-const submitBtn = document.querySelector('.submit-btn')
-submitBtn.addEventListener('click', submitForm)
+const form = document.querySelector('form')
+form.addEventListener('submit', submitForm)
 
 function submitForm(e){
+  e.preventDefault()
+
   const textArea = document.querySelector('textarea')
   const inputs = document.querySelectorAll('input')
   
   if(inputs[1].value== '' || inputs[0].value== '' || textArea.value== ''){
     showMessage('Please fill the form', 'error') 
   }else{
-    const form = document.querySelector('form')
-    form.method = 'post'
-    form.setAttribute('data-netlify', true)
-        
-       console.log(form)
-       showMessage('Thanks for reaching out. I will be in touch shortly', 'success')
+    let form = document.querySelector('form')
+    let formData = new FormData(form)
+    fetch('/', {
+      method: 'POST',
+      headers: {"Content-type": "application/x-www-form-urlencoded"},
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => showMessage('Thanks for reaching out. I will be in touch shortly', 'success'))
+    .catch((error) => alert(error))
+   
+       
+       //showMessage('Thanks for reaching out. I will be in touch shortly', 'success')
        clearInputFields(inputs[0])
        clearInputFields(inputs[1])
        clearInputFields(textArea)
   }
   
-  e.preventDefault()
+ 
 }
 
 function showMessage(message, className){
