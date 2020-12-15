@@ -61,7 +61,7 @@ const form = document.querySelector('form')
 form.addEventListener('submit', submitForm)
 
 function submitForm(e){
-  e.preventDefault()
+  
 
   const textArea = document.querySelector('textarea')
   const inputs = document.querySelectorAll('input')
@@ -84,7 +84,7 @@ function submitForm(e){
        clearInputFields(textArea)
   }
   
- 
+  e.preventDefault()
 }
 
 function showMessage(message, className){
