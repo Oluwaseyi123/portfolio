@@ -103,3 +103,9 @@ function showMessage(message, className){
 function clearInputFields(input){
   input.value = ''
 }
+
+// function sendFormData(){
+//   var XHR = new XMLHttpRequest()
+//   var FD = new FormData(form)
+
+// }
