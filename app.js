@@ -79,8 +79,6 @@ function submitForm(e){
     .then(() => showMessage('Thanks for reaching out. I will be in touch shortly', 'success'))
     .catch((error) => alert(error))
    
-       
-       //showMessage('Thanks for reaching out. I will be in touch shortly', 'success')
        clearInputFields(inputs[0])
        clearInputFields(inputs[1])
        clearInputFields(textArea)
@@ -111,9 +109,3 @@ function showMessage(message, className){
 function clearInputFields(input){
   input.value = ''
 }
-
-// function sendFormData(){
-//   var XHR = new XMLHttpRequest()
-//   var FD = new FormData(form)
-
-// }
