@@ -36,26 +36,6 @@ fadeIn.forEach(fade => {
 appearOnScroll.observe(fade)
 })
 
-const navIcon = document.querySelector('.nav-icon')
-navIcon.addEventListener('click', showNav)
-let image_tracker = 'orange';
-
-
-function showNav(e) {
- // navIcon.src = 'images/close.svg'
-  const navUL = document.querySelector('.nav-ul')
-  if(image_tracker == 'orange'){
-     navIcon.src = 'images/close.svg'
-     navUL.classList.add('show-nav')
-     image_tracker = 'blue'
-
-  }else{
-    navIcon.src = 'images/nav-icon.svg'
-    navUL.classList.remove('show-nav')
-    image_tracker = 'orange';
-  }
- 
-}
 
 const form = document.querySelector('form').addEventListener('submit', submitForm)
 
@@ -110,4 +90,20 @@ function showMessage(message, className){
 
 function clearInputFields(input){
   input.value = ''
+}
+
+const navIcon = document.querySelector('.nav-icon')
+navIcon.addEventListener('click', toggleNav)
+
+function toggleNav(){
+    const barOne = document.querySelector('.bar-one')
+    const barTwo = document.querySelector('.bar-two')
+    const barThree = document.querySelector('.bar-three')
+    const navUl = document.querySelector('.nav-ul')
+    const heroSection = document.querySelector('.hero-section')
+    barOne.classList.toggle('nav-toggle-one')
+    barThree.classList.toggle('nav-toggle-two')
+    barTwo.classList.toggle('nav-toggle-three')
+    navUl.classList.toggle('nav-toggle')
+   
 }
