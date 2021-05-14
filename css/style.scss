@@ -45,7 +45,7 @@ body{
 }
 .nav-icon{
     cursor: pointer;
-    backface-visibility: hidden;
+    //backface-visibility: hidden;
     transform-origin: center;
     
 }
@@ -71,7 +71,8 @@ body{
    flex-direction: column;
    top: 15px;
    background: hsl(0, 0%, 100%);
-   width: 200px;//right: 50px;
+   width: 200px;
+   
    border-radius: 10px;
    li{
        a{
@@ -87,6 +88,7 @@ body{
       
    }
 }
+
 .logo{
     img{
         width: 30px;
@@ -285,10 +287,25 @@ nav{
     margin: 30px auto;
     p{
         text-align: center;
+        font-family: 'GTWalsheimPro-regular';
+        text-decoration: none;
+        color: #555555;
+        padding-bottom: 20px;
     }
-    p:nth-of-type(1){
-        font: 28px 'GTWalsheimPro-medium';
+    a{
+        text-align: center;
+        font-family: 'GTWalsheimPro-medium';
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
+    // p:nth-of-type(1){
+    //     font-family: 'GTWalsheimPro-medium';
+    // }
     p:nth-of-type(2){
         font: 14px 'GTWalsheimPro-regular';
         color: #555555;
@@ -304,23 +321,23 @@ nav{
         width: 200px;
     }
 }
-.project.one{
-    p:nth-of-type(1){
-        color: #FA3B5A;
-    }
-}
+// .project.one{
+//     p:nth-of-type(1){
+//         color: #FA3B5A;
+//     }
+// }
 
-.project.two{
-    p:nth-of-type(1){
-        color: #48B8A8;
-    }
-}
+// .project.two{
+//     p:nth-of-type(1){
+//         color: #48B8A8;
+//     }
+// }
 
-.project.three{
-    p:nth-of-type(1){
-        color: #F3908A;
-    }
-}
+// .project.three{
+//     p:nth-of-type(1){
+//         color: #F3908A;
+//     }
+// }
 
 .tech{
     transition: all .4s ease; 

@@ -50,8 +50,6 @@ body {
 
 .nav-icon {
   cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -346,10 +344,22 @@ nav ul li a:hover {
 
 .project p {
   text-align: center;
+  font-family: 'GTWalsheimPro-regular';
+  text-decoration: none;
+  color: #555555;
+  padding-bottom: 20px;
 }
 
-.project p:nth-of-type(1) {
-  font: 28px 'GTWalsheimPro-medium';
+.project a {
+  text-align: center;
+  font-family: 'GTWalsheimPro-medium';
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .project p:nth-of-type(2) {
@@ -365,18 +375,6 @@ nav ul li a:hover {
   margin: 0 auto;
   display: block;
   width: 200px;
-}
-
-.project.one p:nth-of-type(1) {
-  color: #FA3B5A;
-}
-
-.project.two p:nth-of-type(1) {
-  color: #48B8A8;
-}
-
-.project.three p:nth-of-type(1) {
-  color: #F3908A;
 }
 
 .tech {
