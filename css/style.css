@@ -360,6 +360,17 @@ nav ul li a:hover {
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.project a img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.project a:hover img {
+  width: 250px;
 }
 
 .project p:nth-of-type(2) {

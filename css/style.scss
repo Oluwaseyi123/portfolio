@@ -302,6 +302,15 @@ nav{
         margin: 0 auto;
         padding-bottom: 10px;
         padding-top: 10px;
+        transition: all .5s ease ;
+        img{
+            transition: all .5s ease ;
+        }
+    }
+    a:hover{
+        img{
+            width: 250px;
+        }
     }
     // p:nth-of-type(1){
     //     font-family: 'GTWalsheimPro-medium';
