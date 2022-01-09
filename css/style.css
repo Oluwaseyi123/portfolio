@@ -348,8 +348,13 @@ nav ul li a:hover {
   text-decoration: none;
   color: #555555;
   padding-bottom: 20px;
+  width: 250px;
+  margin: 0 auto;
 }
-
+.project p span{
+  font-weight: 600;
+  color: #000000;
+}
 .project a {
   text-align: center;
   font-family: 'GTWalsheimPro-medium';
@@ -367,10 +372,12 @@ nav ul li a:hover {
 .project a img {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  width: 200px;
+  height: 150px;
 }
 
 .project a:hover img {
-  width: 250px;
+  width: 220px;
 }
 
 .project p:nth-of-type(2) {

@@ -227,6 +227,7 @@ nav{
    p{
        text-align: center;
        line-height: 40px;
+       
    }
    p:nth-of-type(1){
     font: 30px 'GTWalsheimPro-medium';
@@ -291,6 +292,11 @@ nav{
         text-decoration: none;
         color: #555555;
         padding-bottom: 20px;
+        
+        span{
+            font-size: 40px;
+            font-weight: 600;
+        }
     }
     a{
         text-align: center;
